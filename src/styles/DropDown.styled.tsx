@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const UlWrapper = styled.div`
   height: 152px;
@@ -12,6 +12,7 @@ export const DropDownContainer = styled.ul`
   list-style: none;
   overflow-y: scroll;
   margin: 0 auto;
+  cursor: pointer;
 `;
 
 export const StyledLi = styled.li<{ isOpen: boolean }>`
@@ -20,8 +21,7 @@ export const StyledLi = styled.li<{ isOpen: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) =>
-    props.isOpen ? "rgba(180, 180, 180, 0.3)" : "#fff"};
+  background-color: ${(props) => (props.isOpen ? 'rgba(180, 180, 180, 0.3)' : '#fff')};
   font-size: 20px;
   color: var(--color-black);
   margin: 0 auto;
